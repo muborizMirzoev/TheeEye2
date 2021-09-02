@@ -1,0 +1,16 @@
+@import '_vars.css';
+
+html,
+body {
+    height: 100%;
+    font-family: var(--font);
+    line-height: 19px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.wrapper {
+    max-width: 1210px;
+    margin: 0 auto;
+    padding: 0 20px;
+}

@@ -1,0 +1,11 @@
+@import '_font.css';
+
+.h1 {
+    font-size: 60px;
+    font-family: Gilroy, sans-serif;
+}
+
+.h2  {
+    font-size: 60px;
+    font-family: Gilroy, sans-serif;
+}

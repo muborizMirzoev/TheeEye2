@@ -132,7 +132,7 @@
     position: absolute;
     right: -3px;
     top: 8px;
-    border-left: 1px solid rgba(0,0,0,.3);
+    border-left: 1px solid rgba(0, 0, 0, .3);
     height: 50px;
 }
 
@@ -143,9 +143,11 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    background-color: var(--main-bg);
 }
 
-.featured-locations__title {
+.featured-locations__title,
+.block-title{
     margin-bottom: 17px;
     font-family: GilroyMedium, sans-serif;
     font-weight: 600;
@@ -155,7 +157,8 @@
     color: var(--second-font-color);
 }
 
-.featured-locations__subtitle {
+.featured-locations__subtitle,
+.block-subtitle{
     margin-bottom: 64px;
     text-align: center;
     font-size: 16px;
@@ -179,13 +182,14 @@
     transition: margin-left 250ms ease-in;
 }
 
-.carousel__item{
+.carousel__item {
     position: relative;
     display: inline-block;
     width: 269px;
     height: 366px;
 }
-.carousel__item img{
+
+.carousel__item img {
     width: 269px;
 }
 
@@ -238,8 +242,118 @@
     left: -70px;
 }
 
+/*STREAMS*/
+.streams {
+    background: var(--second-bg);
+    padding: 91px 20px 120px 20px;
+}
 
+.streams__buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 33px;
+}
 
+.streams__buttons-item {
+    margin-bottom: 10px;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+    font-size: 15px;
+    line-height: 22px;
+    color: #717171;
+    padding: 7px 20px;
+}
+
+.streams__buttons-item:not(:last-child) {
+    margin-right: 10px;
+}
+
+.streams__buttons-item.active,
+.streams__buttons-item:hover {
+    padding: 7px 20px;
+    background-color: #ffffff;
+    border-radius: 60px;
+    color: #234DD4;
+}
+
+.streams__housecards {
+    max-width: 1172px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.houscards__item {
+    max-width: 369px;
+    padding: 10px;
+    border-radius: 8px;
+    filter: drop-shadow(0px 8px 30px rgba(34, 34, 34, 0.07));
+    background-color: var(--main-bg);
+}
+
+.houscards__item:not(:last-child) {
+    margin-right: 20px;
+}
+
+.houscards__item img {
+    border-radius: 8px;
+    margin-bottom: 24px;
+}
+
+.houscard__locations {
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+}
+
+.houscard__locations svg {
+    margin-right: 8px;
+}
+
+.houscard__locations span {
+    font-size: 12px;
+    line-height: 14px;
+    color: var(--second-font-color)
+}
+
+.housecard__title {
+    margin-bottom: 16px;
+    font-family: GilroyMedium, sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 21px;
+    color: var(--second-font-color);
+}
+
+.housecard__info {
+    margin-bottom: 22px;
+    font-size: 15px;
+    line-height: 22px;
+    color: var(--third-font-color)
+}
+
+.houscard__footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.houscard__footer-price {
+    font-family: GilroyMedium, sans-serif;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 26px;
+    color: var(--btn-bg);
+}
+
+.houscard__footer {
+    font-size: 14px;
+    line-height: 16px;
+}
 
 @media only screen and (max-width: 1283px) {
     .carousel {
@@ -271,6 +385,7 @@
     .promo__form {
         flex-wrap: wrap;
     }
+
     .what-search {
         width: 90vw;
         margin-bottom: 20px;
@@ -278,8 +393,9 @@
         padding-bottom: 21px;
         border-radius: 100px;
     }
+
     .search-bar__what,
-    .search-bar__where{
+    .search-bar__where {
         top: 20px;
     }
 
@@ -301,6 +417,17 @@
         right: 5px;
         border-radius: 60px;
     }
+
+    .streams__housecards  {
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .houscards__item:not(:last-child) {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
 }
 
 @media only screen and (max-width: 681px) {
@@ -313,6 +440,7 @@
     .promo {
         padding: 191px 16px 300px 16px;
     }
+
     .promo__title {
         margin-bottom: 71px;
         font-weight: 600;
@@ -320,12 +448,13 @@
         line-height: 36px;
     }
 
-    .promo__subtitle{
+    .promo__subtitle {
         margin-bottom: 46px;
         max-width: 308px;
         font-size: 16px;
         line-height: 19px;
     }
+
     .header {
         background-color: var(--main-bg);
         padding: 20px 15px;
@@ -340,12 +469,13 @@
         align-items: center;
     }
 
-    .featured-locations__title {
+    .block-title {
         font-size: 22px;
         line-height: 26px;
     }
 
-    .featured-locations__subtitle {
+    .featured-locations__subtitle,
+    .block-subtitle{
         margin-bottom: 30px;
     }
 

@@ -241,6 +241,20 @@
 
 
 
+@media only screen and (max-width: 1283px) {
+    .carousel {
+        width: 870px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media only screen and (max-width: 996px) {
+    .carousel {
+        width: 561px;
+    }
+}
 
 @media only screen and (max-width: 770px) {
     .what-search {
@@ -289,6 +303,12 @@
     }
 }
 
+@media only screen and (max-width: 681px) {
+    .carousel {
+        max-width: 287px;
+    }
+}
+
 @media only screen and (max-width: 500px) {
     .promo {
         padding: 191px 16px 300px 16px;
@@ -319,4 +339,36 @@
         display: flex;
         align-items: center;
     }
+
+    .featured-locations__title {
+        font-size: 22px;
+        line-height: 26px;
+    }
+
+    .featured-locations__subtitle {
+        margin-bottom: 30px;
+    }
+
+    .carousel {
+        margin: 0 auto;
+        text-align: center;
+        max-width: 90vw;
+    }
+
+    .arrow {
+        display: none;
+    }
+
+    .carousel__images {
+        width: 100%;
+    }
+
+    .carousel__item:not(:last-child) {
+        margin-right: 0;
+    }
+}
+
+@media only screen and (max-width: 415px) {
+
+
 }

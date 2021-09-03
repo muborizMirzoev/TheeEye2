@@ -3,7 +3,7 @@ const carousel = document.querySelector('#carousel')
 
 /* конфигурация */
 let width = 269+18; // ширина картинки
-let count = 4; // видимое количество изображений
+let count = 1; // видимое количество изображений
 
 let list = carousel.querySelector('.carousel__images');
 let listElems = carousel.querySelectorAll('.carousel__item');
@@ -25,3 +25,9 @@ carousel.querySelector('.next').onclick = function() {
    position = Math.max(position, -width * (listElems.length - count));
    list.style.marginLeft = position + 'px';
 };
+
+window.addEventListener('resize', () => {
+   if (window.innerWidth <= 408) {
+      list.style.marginLeft = 0;
+   }
+})

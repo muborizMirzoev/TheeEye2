@@ -355,6 +355,42 @@
     line-height: 16px;
 }
 
+/*SUBMIT-PROPERTY*/
+.submit-property {
+    position: relative;
+    text-align: center;
+    padding: 191px 20px 181px 20px;
+    background-image: url("../assets/img/homepage/submit-property-bg.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: var(--hover-font-color);
+
+}
+
+.submit-property__title {
+    margin-bottom: 26px;
+    font-family: GilroyMedium, sans-serif;
+    font-weight: 600;
+    font-size: 50px;
+    line-height: 60px;
+}
+
+.submit-property__subtitle {
+    font-weight: 400;
+    margin-bottom: 61px;
+    font-size: 16px;
+    line-height: 26px;
+}
+
+.submit-property__btn {
+    padding: 18px 52px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+}
+
+
 @media only screen and (max-width: 1283px) {
     .carousel {
         width: 870px;
@@ -495,6 +531,22 @@
 
     .carousel__item:not(:last-child) {
         margin-right: 0;
+    }
+
+    .submit-property {
+        padding: 104px 20px 138px 20px;
+    }
+
+    .submit-property__title {
+        padding: 0 30px;
+        margin-bottom: 22px;
+        font-size: 30px;
+        line-height: 36px;
+    }
+
+    .submit-property__subtitle {
+        padding: 0 40px;
+        margin-bottom: 57px;
     }
 }
 

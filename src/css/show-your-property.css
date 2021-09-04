@@ -1,0 +1,68 @@
+@import "_font.css";
+@import "_vars.css";
+@import "_global.css";
+@import "_reset.css";
+@import "_header.css";
+
+
+
+.main {
+    padding: 83px 20px 116px 20px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.main__title {
+    margin-bottom: 60px;
+    font-family: GilroyMedium, sans-serif;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 36px;
+    color: var(--second-font-color);
+}
+
+.main__form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.main__form input {
+    width: 100%;
+    padding: 19px 22px;
+    margin-bottom: 20px;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+}
+.hr-line {
+    border: 1px solid var(--border-color);
+    margin: 20px 0 40px 0;
+}
+
+.main__form-btn {
+    margin-top: 45px;
+    padding: 23px;
+}
+
+@media only screen and (max-width: 420px) {
+    .main {
+        padding: 40px 20px 54px 20px;
+    }
+
+    .main__title {
+        margin-bottom: 30px;
+        font-size: 22px;
+        line-height: 26px;
+    }
+
+    .hr-line {
+        border: 1px solid var(--border-color);
+        margin: 14px 0 35px 0;
+    }
+
+    .main__form-btn {
+        margin-top: 30px;
+        padding: 17px;
+    }
+}

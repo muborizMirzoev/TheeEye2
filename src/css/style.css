@@ -428,6 +428,82 @@
     line-height: 19px;
 }
 
+/*NEWS*/
+.news {
+    padding: 90px 10px 100px 10px;
+    background: var(--second-bg);
+}
+
+.news-container {
+    max-width: 1172px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.news__card {
+    margin-left: 10px;
+    margin-right: 10px;
+    position: relative;
+    padding: 10px;
+    max-width: 370px;
+    background: var(--main-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+}
+
+.news__img img {
+    margin-bottom: 17px;
+    object-fit: cover;
+    width: 100%;
+    height: 250px;
+    border-radius: 8px;
+}
+
+.news__label {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    padding: 5px 21px;
+    border-radius: 600px;
+    font-size: 14px;
+    line-height: 21px;
+    text-transform: capitalize;
+    color: var(--hover-font-color);
+    background-color: var(--btn-bg);
+}
+
+.news__info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 17px;
+    font-size: 14px;
+    line-height: 16px;
+    color: var(--third-font-color);
+}
+
+.news__info-author {
+    margin-right: 45px;
+    display: flex;
+    align-items: center;
+}
+
+.news__info-author svg,
+.news__info-date svg {
+    margin-right: 10px;
+}
+
+.news__info-date {
+    display: flex;
+    align-items: center;
+}
+
+.news__text {
+    margin-bottom: 17px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 21px;
+}
 
 @media only screen and (max-width: 1283px) {
     .carousel {
@@ -441,6 +517,17 @@
 @media only screen and (max-width: 996px) {
     .carousel {
         width: 561px;
+    }
+}
+
+@media only screen and (max-width: 888px) {
+    .news-container {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .news__card {
+        margin-bottom: 20px;
     }
 }
 
@@ -506,8 +593,6 @@
         flex-wrap: wrap;
     }
 }
-
-
 
 
 @media only screen and (max-width: 681px) {
@@ -602,10 +687,17 @@
     .icons__item {
         margin: 10px 0 0 0;
     }
+
+    .news {
+        padding-top: 78px;
+    }
+
+    .news__card {
+        margin: 0 0 20px 0;
+    }
 }
 
 @media only screen and (max-width: 415px) {
-
 
 }
 

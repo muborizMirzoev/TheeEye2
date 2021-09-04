@@ -2,7 +2,7 @@
 @import "_vars.css";
 @import "_global.css";
 @import "_reset.css";
-@import "footer.css";
+@import "_footer.css";
 
 .header {
     z-index: 1;

@@ -27,3 +27,7 @@ body {
     background-color: var(--btn-bg);
     color: var(--hover-font-color);
 }
+
+.hidden {
+    display: none;
+}

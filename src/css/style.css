@@ -2,6 +2,7 @@
 @import "_vars.css";
 @import "_global.css";
 @import "_reset.css";
+@import "footer.css";
 
 .header {
     z-index: 1;
@@ -356,7 +357,8 @@
 }
 
 /*SUBMIT-PROPERTY*/
-.submit-property {
+.submit-property,
+.images-block{
     position: relative;
     text-align: center;
     padding: 191px 20px 181px 20px;
@@ -368,7 +370,8 @@
 
 }
 
-.submit-property__title {
+.submit-property__title,
+.images-block__title{
     margin-bottom: 26px;
     font-family: GilroyMedium, sans-serif;
     font-weight: 600;
@@ -376,14 +379,16 @@
     line-height: 60px;
 }
 
-.submit-property__subtitle {
+.submit-property__subtitle,
+.images-block__subtitle{
     font-weight: 400;
     margin-bottom: 61px;
     font-size: 16px;
     line-height: 26px;
 }
 
-.submit-property__btn {
+.submit-property__btn,
+.images-block__btn{
     padding: 18px 52px;
     font-size: 16px;
     font-weight: 400;
@@ -503,6 +508,10 @@
     font-weight: 600;
     font-size: 18px;
     line-height: 21px;
+}
+/*WATCH AMAZING*/
+.watch-amazing {
+    background-image: url("../assets/img/homepage/home-cta-bg.png");
 }
 
 @media only screen and (max-width: 1283px) {
@@ -664,18 +673,21 @@
         margin-right: 0;
     }
 
-    .submit-property {
+    .submit-property,
+    .images-block{
         padding: 104px 20px 138px 20px;
     }
 
-    .submit-property__title {
+    .submit-property__title,
+    .images-block__title{
         padding: 0 30px;
         margin-bottom: 22px;
         font-size: 30px;
         line-height: 36px;
     }
 
-    .submit-property__subtitle {
+    .submit-property__subtitle,
+    .images-block__subtitle{
         padding: 0 40px;
         margin-bottom: 57px;
     }

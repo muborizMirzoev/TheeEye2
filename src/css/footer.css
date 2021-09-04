@@ -1,0 +1,116 @@
+
+.footer-wrapper {
+    background-color: var(--main-bg);
+}
+
+.footer {
+    max-width: 1190px;
+    margin: 0 auto;
+    padding: 100px 10px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    font-size: 15px;
+    line-height: 24px;
+    color: var(--third-font-color);
+}
+
+.footer__item {
+    margin-bottom: 30px;
+    margin-right: 40px;
+}
+
+.footer__item h4 {
+    margin-bottom: 30px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    color: var(--second-font-color);
+}
+
+.footer__item ul li {
+    margin-bottom: 11px;
+}
+
+.footer__item ul li svg {
+    margin-right: 1rem;
+}
+
+.footer-form {
+    position: relative;
+    margin-top: 11px;
+    max-width: 369px;
+}
+
+.footer-form input {
+    width: 100%;
+    padding: 22px 137px 22px 22px;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    font-size: 15px;
+    line-height: 18px;
+}
+
+.footer-form__btn {
+    position: absolute;
+    top: 6px;
+    right: 8px;
+    padding: 15px 24px;
+    border-radius: 8px;
+    border: none;
+    font-size: 16px;
+    line-height: 19px;
+    cursor: pointer;
+    background: #234DD4;
+    color: #FFFFFF;
+}
+
+.footer-bottom-wrapper {
+    border-top: 1px solid rgba(35, 77, 212, 0.07);
+}
+
+.footer-bottom {
+    max-width: 1190px;
+    margin: 0 auto;
+    padding: 41px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer-bottom__socnet,
+.footer-bottom__logo,
+.footer-bottom__copyright {
+    margin: 16px 0;
+}
+
+.footer-bottom__socnet {
+    width: 130px;
+    max-width: 130px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media only screen and (max-width: 480px) {
+    .footer {
+        padding: 30px 10px 10px 10px;
+        flex-direction: column;
+    }
+
+    .footer-bottom {
+        flex-direction: column-reverse;
+        padding: 20px 10px;
+    }
+
+    .footer__item {
+        margin-right: 0;
+    }
+
+    .footer-bottom__socnet,
+    .footer-bottom__logo,
+    .footer-bottom__copyright  {
+        margin: 10px 0;
+    }
+}

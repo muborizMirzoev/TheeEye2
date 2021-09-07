@@ -197,7 +197,7 @@
 
 .carousel__item-info {
     position: absolute;
-    bottom: 33px;
+    bottom: 45px;
     width: 269px;
     color: var(--hover-font-color);
 }

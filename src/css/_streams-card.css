@@ -23,6 +23,10 @@
     margin-bottom: 24px;
 }
 
+.houscard__info-wrapper {
+    padding: 0 15px 0 15px
+}
+
 .houscard__locations {
     margin-bottom: 8px;
     display: flex;

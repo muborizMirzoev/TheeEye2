@@ -12,7 +12,7 @@
 
 .main__content {
     min-width: 50%;
-    padding: 8px;
+    padding: 30px 12px 30px 30px;
     height: 800px;
 }
 .main__map {
@@ -73,7 +73,7 @@
 
 .content__cards {
     margin-bottom: 27px;
-    width: 97%;
+    width: 100%;
     height: 72%;
     overflow-y: auto;
 }
@@ -193,6 +193,7 @@
     .main__content {
         width: 100%;
         height: 100%;
+        padding: 20px;
     }
 
     .cards__item img {

@@ -30,7 +30,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 19px 22px;
+    padding: 18px 22px;
     margin-bottom: 18px;
     margin-right: 18px;
     font-size: 15px;
@@ -44,6 +44,10 @@
 
 .filter__button span {
     margin-right: 40px;
+}
+
+.filter__button .filter__button-long {
+    margin-right: 99px;
 }
 
 .filter__input {

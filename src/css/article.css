@@ -5,3 +5,7 @@
 @import "_header.css";
 @import "_article-main.css";
 @import "_footer.css";
+
+.footer-wrapper {
+    background-color: var(--second-bg);
+}

@@ -86,18 +86,12 @@
     margin-bottom: 30px;
 }
 
-/*.cards__item-img {*/
-/*    max-width: 300px;*/
-/*    min-height: 220px;*/
-/*    margin-right: 20px;*/
-/*}*/
 .cards__item img {
     margin-right: 20px;
     max-width: 300px;
     min-height: 220px;
     border-radius: 8px;
 }
-
 
 .cards__item-info {
     display: flex;
